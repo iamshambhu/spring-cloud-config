@@ -1,0 +1,25 @@
+spring:
+  profiles:
+    active: local
+
+  #application:
+   #name: nexxtfleet-workshop-sl
+  cloud:
+    config:
+      uri:
+      - http://localhost:8191/
+stub: 
+  enabled: false
+  
+# Log file name.
+logging:
+  file: ./logs/workshopservice.log
+  level:
+    com.netflix.discovery: 'DEBUG'
+    
+encoded:
+  authtoken: Basic c3J2YzMyODQ6Q2IhOTk2MjJVejZDQTVKUw==
+  
+userservice:
+  domain.url: http://defrkim0620.d400.mh.grp:8372/sfm-userservice/api/rest/sfmUserService/domain?lang=en&prefilterToBeUsed=  
+  roles.url: http://defrkim0620.d400.mh.grp:8372/sfm-userservice/api/rest/roles

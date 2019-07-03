@@ -1,0 +1,18 @@
+spring:
+  data:
+    mongodb:
+     uri: mongodb://${MONGO_USERNAME}:${MONGO_PASSWORD}@e2r2s05idbs0004.d400.mh.grp,e2r2s05idbs0005.d400.mh.grp,e2r2s05idbs0006.d400.mh.grp/${MONGO_DATABASE}?replicaSet=DevReplicaSet
+     # uri: mongodb://nexxtfleet_dev_workshopapp:rFHObgaSPyWSomsDmfJA4@e2r2s05idbs0004.d400.mh.grp,e2r2s05idbs0005.d400.mh.grp,e2r2s05idbs0006.d400.mh.grp/workshopapp?replicaSet=DevReplicaSet
+     # database: workshopapp
+     
+workshopservice.backend.sap:
+  odata:
+    host: e1sap200.d400.mh.grp
+    port: 44300
+    useSSL: true
+    format: JSON
+    user: ODATA_SFM_FU
+    pwd: X~z9Ri>E
+    client: 200
+    requestPoolSize: 25
+    requestPoolMaxWaitMillis: 45000
